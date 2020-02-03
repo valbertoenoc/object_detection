@@ -7,6 +7,7 @@ sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), 'obje
 from object_detector.detector import load_graph, detect_object
 from yolo_detector.yolo import YoloDetector
 
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument('-i', '--input',        default='videos\\car_chase_01.mp4',

@@ -19,6 +19,7 @@ def main():
     results = detect_object_path(detection_graph, sess, categories, args['input'])
 
     cv2.imshow('img', results[0])
+    cv2.imwrite('output.png', results[0])
     cv2.waitKey(0)
 
     

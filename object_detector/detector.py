@@ -11,7 +11,6 @@ from objectdetection import draw_detected_objects
 from object_detection.utils import label_map_util
 from object_detection.utils import ops as utils_ops
 
-
 # patch tf1 into `utils.ops`
 utils_ops.tf = tf.compat.v1
 # Patch the location of gfile

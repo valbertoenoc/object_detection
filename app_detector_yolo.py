@@ -5,7 +5,7 @@ from yolo_detector.yolo import YoloDetector
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("-i", "--input", default="images\\soccer.jpg", help="Path to input image")
+    ap.add_argument("-i", "--input", default="images\\traffic.jpeg", help="Path to input image")
     
     args = vars(ap.parse_args())
 
@@ -17,6 +17,7 @@ def main():
     result = yd.draw_detection(image, boxes, confidences, classes)
     
     cv2.imshow('result', result)
+    cv2.imwrite('output_traffic.png', result)
     cv2.waitKey()
 
 if __name__ == "__main__":
