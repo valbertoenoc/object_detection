@@ -1,4 +1,4 @@
-# object_detection
+# Object Detection
 Basic application of object detection using YOLO/Faster_RCNN/SSD_MOBILENET implementations
 
 Installation
@@ -53,7 +53,7 @@ Which will yield the following result:
 
 In order to run each of the models, follow these steps:
 
-1. The coco trained weights for yolo:
+1. The coco trained weights for yolo (Weights were not included because of Github file size limit restriction):
 
 [Yolo Weights](https://pjreddie.com/media/files/yolov3.weights)
 
